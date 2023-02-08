@@ -1,0 +1,48 @@
+.clothes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    justify-content: space-between;
+
+}
+
+.cloth {
+    flex: 0 0 33.333333%;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 111px;
+    align-items: center;
+}
+
+.clothes:nth-child(even){
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.list {
+    list-style: none;
+    text-align: center;
+}
+
+.image {
+    cursor: pointer;
+}
+
+.image:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+}
+
+.brand {
+    font-weight: bold;
+    color: #473B3D;
+}
+
+.price {
+    font-style: italic;
+    font-weight: 500;
+    color: #473B3D;
+}
+
+.product {
+    font-weight: 500;
+}
