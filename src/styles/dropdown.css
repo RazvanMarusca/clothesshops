@@ -3,8 +3,9 @@
 .dropdown {
     position: relative;
     float: right;
-    bottom: 43px;
+    bottom: 47px;
     right: 20px;
+    margin-right: 10px;
 }
 
 .but:hover{
@@ -12,12 +13,19 @@
 }
 
 .but{
+    margin-top: 9px;
     padding-right: 40px;
-    text-align: center;
+    display: inline-flex;
+    gap: 15px;
     background: rgba(0, 136, 169, 1);
     border: none;
-    padding: 9px 20px;
+    padding: 3px 10px 3px 20px;
     border-radius: 5px;
+}
+
+.fa-angle-down {
+  color: bisque;
+  padding-top: 3px;
 }
 
 .but,

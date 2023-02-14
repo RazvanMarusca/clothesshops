@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./src/styles/nav.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
     <link rel="stylesheet" href="./src/styles/dropdown.css">
+    <link rel="stylesheet" href="./src/styles/filter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -28,7 +29,6 @@
         <span class="dot"><p>0</p></span>
     </div>
     </header>
-
         <div class="box">
             <input type="checkbox" id="check">
             <div class="search-box">
@@ -37,9 +37,8 @@
                     <i class="fa fa-search"></i>
                 </label>
             </div>
-
             <div class="dropdown">
-                <button class="but">Categories:</button>
+                <button class="but"><p>Sort by</p><i class="fa-solid fa-angle-down"></i></button>
                 <div class="dropdown-content">
                 <a class="cta2" href="index.html">Barbati</a>
                 <a class="cta2" href="index.html">Femei</a>
@@ -47,9 +46,31 @@
                 <a class="cta2" href="index.html">Reduceri</a>
                 </div>
               </div>
+
+              <div class="filter">
+                <button class="buto"><p>Filter</p><i class="fa-solid fa-filter"></i></button>
+                <div class="filter-content">
+                <ul>
+                <li class="size">
+                    <a class="cta3" href="index.html"> 
+                        <p>Marime</p>
+                        <i class="fa-solid fa-right fa-angle-down"></i>
+                    </a>
+                    <div class="dimension">
+                        <ul>
+                            <li><a href="index.html">M</a></li>
+                            <li><a href="index.html">L</a></li>
+                            <li><a href="index.html">XL</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="cta3" href="index.html">Pret</a></li>
+                <li><a class="cta3" href="index.html">Culoare</a></li>
+                </ul>
+                </div>
+              </div>
+
         </div>
-
-
 
         <div class="clothes">   
             <div class="cloth">
