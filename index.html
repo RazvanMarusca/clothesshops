@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quality-Shop</title>
     <script src="https://kit.fontawesome.com/3cd9112e15.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/clothes.css">
     <link rel="stylesheet" href="./src/styles/nav.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
+    <link rel="stylesheet" href="./src/styles/dropdown.css">
+    <link rel="stylesheet" href="./src/styles/filter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -16,128 +18,157 @@
         <img class="logo" src="img/logo.png" width="75px" height="45px" alt="logo">
     <nav class="nav_links">
         <ul>
-        <li class="nav-menu"><a href="index.html">Home</a></li>
-        <li class="nav-menu"><a href="about.html">About</a></li>
-        <li class="nav-menu"><a href="services.html">Services</a></li>
+        <li class="nav-menu"><a class="cta" href="index.html">Home</a></li>
+        <li class="nav-menu"><a class="cta" href="about.html">About</a></li>
+        <li class="nav-menu"><a class="cta" href="services.html">Services</a></li>
         </ul>
     </nav>
-    <a class="cta" href="#"><button>Contact</button></a>
-        <div class="shopping-cart">
-            <i class="" style="font-size: 20px;">0</i>
-            <i class=""></i>
-        </div>
-        <div class="search">
-            <form action="#">
-                <input type="text"
-                    placeholder=" Search product"
-                    name="search">
-                <button>
-                    <i class="fa fa-search"
-                        style="font-size: 18px;">
-                    </i>
-                </button>
-            </form>
-        </div>
+    <a class="cta1" href="#"><button class="btni">Contact</button></a>
+    <div class="shopping-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="dot"><p>0</p></span>
+    </div>
     </header>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="What are you looking for?">
+                <label for="check" class="icon">
+                    <i class="fa fa-search"></i>
+                </label>
+            </div>
+            <div class="dropdown">
+                <button class="but"><p>Sort by</p><i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                <a class="cta2" href="index.html">Barbati</a>
+                <a class="cta2" href="index.html">Femei</a>
+                <a class="cta2" href="index.html">Copii</a>
+                <a class="cta2" href="index.html">Reduceri</a>
+                </div>
+              </div>
 
+              <div class="filter">
+                <button class="buto"><p>Filter</p><i class="fa-solid fa-filter"></i></button>
+                <div class="filter-content">
+                <ul>
+                <li class="size">
+                    <a class="cta3" href="index.html"> 
+                        <p>Marime</p>
+                        <i class="fa-solid fa-right fa-angle-down"></i>
+                    </a>
+                    <div class="dimension">
+                        <ul>
+                            <li><a href="index.html">M</a></li>
+                            <li><a href="index.html">L</a></li>
+                            <li><a href="index.html">XL</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="cta3" href="index.html">Pret</a></li>
+                <li><a class="cta3" href="index.html">Culoare</a></li>
+                </ul>
+                </div>
+              </div>
+
+        </div>
 
         <div class="clothes">   
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/JacketaSport.png" width="295px" height="180px" alt="Jacketa">
+                        <img class="image" src="img/JacketaSport.png" width="295px" height="180px" alt="Jacketa">
                     </li>
-                    <li><p>Quechua</p></li>
-                    <li><p>Sport Jacket</p></li>
-                    <li><p>290 lei</p></li>
+                    <li><p class="brand">Quechua</p></li>
+                    <li><p class="product">Sport Jacket</p></li>
+                    <li><p class="price">290 LEI</p></li>
                 </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/GeacaMunte.png" width="235px" height="200px" alt="Geaca">
+                        <img class="image" src="img/GeacaMunte.png" width="235px" height="200px" alt="Geaca">
                     </li>
-                    <li><p>Pull&Bear</p></li>
-                    <li><p>Geaca de munte</p></li>
-                    <li><p>560 lei</p></li>
+                    <li><p class="brand">Pull&Bear</p></li>
+                    <li><p class="product">Geaca de munte</p></li>
+                    <li><p class="price">560 LEI</p></li>
                 </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/TricouSimplu.png" width="150px" height="200px" alt="Tricou" class="image">
+                        <img class="image" src="img/TricouSimplu.png" width="150px" height="200px" alt="Tricou" class="image">
                     </li>
-                    <li><p>H&M</p></li>
-                    <li><p>Tricou simplu</p></li>
-                    <li><p>35 lei</p></li>
+                    <li><p class="brand">H&M</p></li>
+                    <li><p class="product">Tricou simplu</p></li>
+                    <li><p class="price">35 LEI</p></li>
                     </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/BluzaAdidas.png" width="210px" height="200px" alt="Bluza barbati">
+                        <img class="image" src="img/BluzaAdidas.png" width="210px" height="200px" alt="Bluza barbati">
                     </li>
-                    <li><p>Adidas</p></li>
-                    <li><p>Bluza sport</p></li>
-                    <li><p>355 lei</p></li>
+                    <li><p class="brand">Adidas</p></li>
+                    <li><p class="product">Bluza sport</p></li>
+                    <li><p class="price">355 LEI</p></li>
                  </ol>
                 </div>
 
-            <div class="clot">
+            <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/BluzaDama.png" width="150px" height="200px" alt="Bluza dama">
+                        <img class="image" src="img/BluzaDama.png" width="150px" height="200px" alt="Bluza dama">
                     </li>
-                    <li><p>Bershka</p></li>
-                    <li><p>Bluza dama</p></li>
-                    <li><p>45 lei</p></li>
+                    <li><p class="brand">Bershka</p></li>
+                    <li><p class="product">Bluza dama</p></li>
+                    <li><p class="price">45 LEI</p></li>
                 </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/SpaceShirt.png" width="150px" height="200px" alt="Bluza cosmica">
+                        <img class="image" src="img/SpaceShirt.png" width="150px" height="200px" alt="Bluza cosmica">
                     </li>
-                    <li><p>Zara</p></li>
-                    <li><p>Sweat shirt</p></li>
-                    <li><p>110 lei</p></li>
+                    <li><p class="brand">Zara</p></li>
+                    <li><p class="product">Sweat shirt</p></li>
+                    <li><p class="price">110 LEI</p></li>
                 </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/SweatyJeans.png" width="180px" height="200px" alt="Sweaty jeans">
+                        <img class="image" src="img/SweatyJeans.png" width="180px" height="200px" alt="Sweaty jeans">
                     </li>
-                    <li><p>Zara</p></li>
-                    <li><p>Blugi dama</p></li>
-                    <li><p>105 lei</p></li>
+                    <li><p class="brand">Zara</p></li>
+                    <li><p class="product">Blugi dama</p></li>
+                    <li><p class="price">105 LEI</p></li>
                 </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/PantaloniBarbati.png" width="170px" height="200px" alt="Pantaloni trening">
+                        <img class="image" src="img/PantaloniBarbati.png" width="170px" height="200px" alt="Pantaloni trening">
                     </li>
-                    <li><p>Bigotti</p></li>
-                    <li><p>Pantaloni trening</p></li>
-                    <li><p>103 lei</p></li>
+                    <li><p class="brand">Bigotti</p></li>
+                    <li><p class="product"> Pantaloni trening</p></li>
+                    <li><p class="price">103 LEI</p></li>
                 </ol>
             </div>
 
             <div class="cloth">
                 <ol class="list">
                     <li>
-                        <img class="product" src="img/CamasaCarouri.png" width="160px" height="200px" alt="Camasa carouri">
+                        <img class="image" src="img/CamasaCarouri.png" width="160px" height="200px" alt="Camasa carouri">
                     </li>
-                    <li><p>Bigotti</p></li>
-                    <li><p>Camasa in carouri</p></li>
-                    <li><p>205 lei</p></li>
+                    <li><p class="brand">Bigotti</p></li>
+                    <li><p class="product">Camasa in carouri</p></li>
+                    <li><p class="price">205 LEI</p></li>
                 </ol>
             </div> 
             </div>
@@ -146,12 +177,12 @@
             <footer class="sole">
                 <div class="footer-content">
                     <img class="logo1" src="img/logo.png" width="75px" height="45px" alt="logo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias, cumque quas eius adipisci itaque id illo sed voluptates a.</p>
+                    <p>Produsele de care chiar ai nevoie!</p>
                     <ul class="socials">
-                        <i class="fa-brands fa-square-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-youtube"></i>
+                        <a class="link1" href="http://www.facebook.com" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a class="link1" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="link1" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="link1" href="http://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                     </ul>
                     <div class="footer-bottom">
                         <p>copyright &copy;2023 Quality-Shop. designed by <span>Zen</span></p>
