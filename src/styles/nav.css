@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 100vw;
+    overflow-x: hidden;
 
 }
 
@@ -107,7 +108,7 @@ i.fa-solid.fa-cart-shopping {
 .box {
     background-color: #000;
     width: 100vw;
-    padding: 10px 0;
+    padding: 10px 10px;
     height: 70px;
 }
 
